@@ -12,10 +12,13 @@ dropdown.addEventListener("change", (event)=>{
     document.getElementById("displayInfo1").innerHTML = `
         <h3>${waccaSongs[songKey].title}</h3>
         `
-     if (waccaSongs[songKey].titleEnglish != null) {
+    if (waccaSongs[songKey].titleEnglish != null) {
         document.getElementById("displayEngTitle").innerHTML = `
         <h3>${waccaSongs[songKey].titleEnglish}</h3>
         `
+    }
+    else {
+        document.getElementById("displayEngTitle").innerHTML = ``
     }
     document.getElementById("displayInfo2").innerHTML = `
         <h3>${waccaSongs[songKey].artist}</h3>
