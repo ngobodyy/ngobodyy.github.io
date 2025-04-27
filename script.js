@@ -28,6 +28,7 @@ dropdown.addEventListener("change", (event)=>{
     `
     if (waccaSongs[songKey].audioInfPath != null) {
         document.getElementById("displayInfAudio").innerHTML = `
+        <h3>Inferno Cut</h3>
         <audio controls src="/WACCA_Songs/audio/${waccaSongs[songKey].audioInfPath}"></audio>
         `
     }
