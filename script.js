@@ -31,6 +31,9 @@ dropdown.addEventListener("change", (event)=>{
         <audio controls src="/WACCA_Songs/audio/${waccaSongs[songKey].audioInfPath}"></audio>
         `
     }
+    else {
+        document.getElementById("displayInfAudio").innerHTML = ``
+    }
     document.getElementById("displayInfo3").innerHTML = `
         <h3>Song ID: ${waccaSongs[songKey].id}</h3>
         <h3>Category: ${waccaSongs[songKey].category}</h3>
